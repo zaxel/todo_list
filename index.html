@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inp_container">
+            <div class="inp_inner">
+                <button class="setTask">Set Task</button>
+                <input class="taskTitle" type="text" placeholder="add task">
+                <button class="getWidget">get list</button>
+            </div>
+            
+            <div class="inp_status_container">
+                <p class="inp_status"></p>
+            </div>
+        </div>
+        <div class="tasks_container"> 
+        </div>
+        <form class="pagination_outcont inactive">
+            <div class="pagination_cont">
+                <button class="jumpToPrev" id="pgnPrev"><</button>
+                <div class="pageNumbers_cont" >
+                </div>
+                <button class="jumpToNext" id="pgnNext">></button>
+
+            </div>
+            <div class="pagination_items-amount">
+                <select name="itemsOnPage" id="" class="pagination_select">
+                    <option disabled>items</option>
+                    <option selected value="2">2</option>
+                    <option  value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="scripts/service.js"></script>
+    <script src="scripts/pagination.js"></script>
+    <script src="scripts/dots.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
